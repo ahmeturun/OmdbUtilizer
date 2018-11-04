@@ -1,4 +1,4 @@
-# Omdb Utilizer[![NPM version]] [![Build Status]](https://travis-ci.org/ahmeturun/akinonproject)
+# Omdb Utilizer[![NPM version](https://badge.fury.io/js/omdbutilizer.svg)](https://npmjs.org/package/omdbutilizer) [![Build Status](https://travis-ci.org/ahmeturun/akinonproject.svg?branch=master)](https://travis-ci.org/ahmeturun/akinonproject)
 
 > Omdb Utilizer
 >
