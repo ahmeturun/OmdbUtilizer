@@ -1,6 +1,6 @@
-# akinonproject [![NPM version](https://badge.fury.io/js/akinonproject.svg)](https://npmjs.org/package/akinonproject) [![Build Status](https://travis-ci.org/ahmeturun/akinonproject.svg?branch=master)](https://travis-ci.org/ahmeturun/akinonproject)
+# Omdb Utilizer[![NPM version]] [![Build Status]](https://travis-ci.org/ahmeturun/akinonproject)
 
-> akinon challenge
+> Omdb Utilizer
 >
 > A small website with two functionalities:
 > 1. Search Page: Searching a movie over OMDB Api using movie title as search key.
