@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title><%= htmlWebpackPlugin.options.title %></title>
+	</head>
+	<body>
+		<div class="mainCont">
+			<div class="container">
+				<div class="middle">
+					<div class="inner">
+						<form action="search.html" class="search-form row" id="searchform" method="get">
+							<div class="col-sm-12 pl-0 pr-0">
+								<input type="text" class="form-control input-lg col-sm-12" name="searchValue" placeholder="Film adi giriniz...">
+								<span onclick="submitForm()">
+									<i class="fas fa-search fa-2x" id="searcIcon"></i>
+								</span>
+							</div>
+						</form>
+					</div>
+					<div id="resultCont">
+						<div class="inner">
+							<div class="arrow_box row" style="display: none;"></div>
+							<div class="row box pt-2 pb-2 themeColor" style="display: none;">
+								<a href="#null"class="mx-auto" onclick="submitForm()">MORE RESULT&nbsp<i class="fas fa-angle-double-right"></i></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

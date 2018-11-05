@@ -1,0 +1,150 @@
+$fa-font-path: "~@fortawesome/fontawesome-free/webfonts";
+@import "~bootstrap/scss/bootstrap";
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/solid.scss";
+
+html {
+	height: calc(100% - 100px);
+}
+
+body {
+	height: 100%;
+}
+
+.mainCont{
+	background-color: #f7f9fd;
+	height: 100%;
+	margin: 50px;
+}
+.mainContSearch{
+	background-color: #f7f9fd;
+	margin: 50px;
+}
+
+.container {
+	display: table;
+	width: 100%;
+	height: 100%;
+  }
+  .middle {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.containerSearch{
+	width: 100%;
+	height: 100%;
+}
+
+.inner {
+	display: table;
+	margin: 0 auto;
+	width: 550px;
+	input + span {
+		@extend .themeColor;
+		position: relative;
+		top: -35px;
+		left: 540px;
+		-webkit-text-stroke: 2px white;
+	}
+}
+
+.imageContainer{
+	min-width: 152px;
+	padding: 0;
+	img {
+		width: inherit;
+	}
+}
+
+.arrow_box {
+	@extend .box;
+}
+.arrow_box:after, .arrow_box:before {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+
+.arrow_box:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #ffffff;
+	border-width: 32px;
+	margin-left: -234px;
+	border-bottom-width: 26px;
+}
+.arrow_box:before {
+	border-color: rgba(203, 245, 239, 0);
+	border-bottom-color: #ced4da;
+	border-width: 34px;
+	margin-left: -235px;
+	border-bottom-width: 27px;
+}
+
+.box{
+	position: relative;
+	background: #ffffff;
+	border: 1px solid #ced4da;
+	padding: 25px;
+	border-radius: 0.25rem;
+}
+
+.row.mr-0.ml-0 + .row.mr-0.ml-0 {
+	border-top:4px #f2eff2 solid;
+	margin-top: 20px;
+	padding-top: 20px;
+}
+
+.twentypx{
+	font-size: 20px;
+}
+
+.borderBottom{
+	border-bottom: #617cbb 4px solid;
+}
+
+.searchResultLabel{
+	color: #617cbb;
+}
+
+.resultCountLabel{
+	color: #9b9b9b;
+}
+
+.textOverflow{
+	overflow: hidden;
+	text-overflow: ellipsis; 
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	// solution regarding the issue=> https://github.com/postcss/autoprefixer/issues/776#issuecomment-297734206
+	 /* autoprefixer: off */
+	-webkit-box-orient: vertical;
+	/* autoprefixer: on */
+}
+
+.textOverflow2line{
+	@extend .textOverflow;
+	-webkit-line-clamp: 2;
+}
+
+.point8font{
+	font-size: 0.9rem;
+}
+
+.showDetails{
+	display: inline-block;
+}
+
+.imdbScore{
+	@extend .themeColor;
+	font-size: 1.3rem;
+}
+
+.themeColor{
+	color: #5b84fc;
+}
